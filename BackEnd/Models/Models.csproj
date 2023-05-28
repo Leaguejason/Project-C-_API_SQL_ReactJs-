@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\Request\RegisterRequest\" />
+    <None Remove="Models\Request\LoginRequest\" />
+    <None Remove="Models\Response\CourseRegisterResponse\" />
+    <None Remove="Models\Response\BatchResponse\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Request\RegisterRequest\" />
+    <Folder Include="Models\Request\LoginRequest\" />
+    <Folder Include="Models\Response\CourseRegisterResponse\" />
+    <Folder Include="Models\Response\BatchResponse\" />
+  </ItemGroup>
+</Project>
