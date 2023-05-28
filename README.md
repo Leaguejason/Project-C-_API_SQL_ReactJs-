@@ -1,1 +1,2 @@
-# Project-C-_API_SQL_ReactJs-
+# Project Student Management
+How to control who can register, learn and enroll the course
